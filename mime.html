@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MIME - Master Degree ITC - Internet Multimedia Engineering</title>
+</head>
+<link rel="shortcut icon" href="images/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=yes> 
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/mediaquery.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700" rel="stylesheet"> 
+    
+<body> 
+<div class="wrapper">
+    
+<div class="intestazione">
+<img src="images/mime-tagline_CMYK_oriz.png">    
+</div> 
+    
+<div class="header">
+<img src="images/header-mime.jpg">
+</div>
+    
+<div class="introduzione">
+<h1>ICT for Internet and multimedia</h1>
+<p>An Engineering master degree about Information and Communication Technologies, focusing on devices, networks, signals, as well as cross-disciplinary issues (big data, photonics, life sciences)</p>
+<div class="opening-buttons left">
+<a href=" http://www.unipd.it/en/how-apply" target="_blank"><button class="right">How to apply</button></a>
+</div>
+<div class="opening-buttons right">
+<a href="http://www.unipd.it/en/ict-internet-and-multimedia-ay-201819" target="_blank"><button class="grey-button left">Course description</button></a>
+</div>
+</div>
+    
+<div class="specifiche">
+<div class="icone">
+<img src="images/icon-positions.png">
+<h1>30 international<br>student positions</h1>
+</div>
+    
+<div class="icone">
+<img src="images/icon-scholarships.png">
+<h1>Scholarships<br>possibilities</h1>
+</div>
+    
+<div class="icone">
+<img src="images/icon-degrees.png">
+<h1>Double degree<br>agreements</h1>
+</div>
+</div>
+
+<div class="internet-multimedia">
+<div class="multimedia">
+<img src="images/internetemultimedia.jpg">
+</div>
+<div class="multimedia grey">
+<div class="textwrapper slideinleft">
+<h1>ICT for Internet and multimedia</h1>
+<h2>A.Y. 2018/19</h2>
+<p><span>Level:</span> Second-cycle degree</p>
+<p><span>Field of study:</span> LM-27 – Telecommunication engineering</p>
+<p><span>Degree awarded:</span> Master of Science in ICT for Internet and Multimedia</p>
+<p><span>Start date:</span> September 2018</p>
+<p><span>Location:</span> Padova, Italy</p>
+<p><span>Available places:</span> European candidates: unlimited;<br> Non-European candidates residing outside Italy:<br> 30 (3 for candidates joining the Marco Polo Project)</p>
+<a href="http://www.unipd.it/en/ict-internet-and-multimedia-ay-201819" target="_blank">>>   Full course description</a>
+</div>
+</div>
+</div>
+
+<div class="scopri">
+<h1>Application deadline for foreign students: Feb 28th 2018</h1>
+<h2>Admission results published: end of March</h2>
+<p>Are you curious to know how to apply?</p>
+<a href=" http://www.unipd.it/en/how-apply" target="_blank"><button >Discover more</button></a>
+</div>
+
+<div class="contatti">
+<a href="mailto:mime@dei.unipd.it"><img src="images/mailto.png"></a>
+<h1>Conctat us</h1>
+<a href="mailto:mime@dei.unipd.it">mime@dei.unipd.it</a>
+</div>
+
+<div class="footer">
+
+<a href="http://www.unipd.it/" target="_blank" alt="Università di Padova"><img src="images/unipd-red.png"></a>
+<a href="https://www.dei.unipd.it//" target="_blank" alt="Dipartimento di Ingegneria"><img src="images/ING.png"></a>
+</div>
+</div>    
+     
+    
+</body>
+
+<script>
+    
+if ($(window).width() > 1024) {
+
+      $(window).scroll( function(){
+        $('.slideinleft').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                  $(this).animate({'opacity': '1', 'margin-left':'0', },700);
+            }
+            
+        }); 
+    });
+    };
+   
+    
+</script>
+</html>

@@ -1,0 +1,291 @@
+html {margin:0;
+      padding:0;}
+body {margin:0;
+      padding:0;}
+.wrapper {width:100%;
+          max-width: 1880px;
+          margin: 0 auto;}
+h1{font-family: 'Quicksand', sans-serif;
+   font-size: 28px;
+   font-weight: 700;
+   color: #9b0014;
+   letter-spacing: 2px;
+   text-align: center;}
+p {font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   font-weight: 300;
+   color: #282b30;
+   text-align: center;
+   line-height: 24px;}
+.intestazione {width:100%;}
+.intestazione img {width:25%;
+                   padding-top: 15px;
+                   padding-left: 50px;
+                   padding-bottom: 15px;
+                   display: block;}
+.header img{width:100%;
+            display: block;}
+.introduzione {background-color: #f2f2f2;
+               margin-top: 0;
+               text-align: center;}
+.introduzione h1{margin: 0;
+                 padding-top: 60px;
+                 padding-bottom: 30px;}
+.introduzione p {padding-bottom: 30px;
+                 width:60%;
+                 margin:0 auto;}
+.introduzione .opening-buttons {width:50%;}
+.right {float:right;}
+.left {float:left;}
+.opening-buttons button {background-color: #9b0014;
+                          font-family: 'Quicksand', sans-serif;
+                          font-size: 20px;
+                          font-weight: 500;
+                          color: white;
+                          letter-spacing: 1px;
+                          border-radius: 8px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                          padding-left: 25px;
+                          padding-right: 25px;
+                          border: 2px solid #9b0014;
+                          cursor: pointer;
+                          margin-bottom: 60px;
+                          margin-right: 7.5px;
+transition: all .5s;}
+.opening-buttons button:hover {transform: scale(1.05);}
+.grey-button {background-color: #282b30 !important;
+              border: 2px solid #282b30 !important;
+              margin-left: 7.5px;}
+.introduzione:after {content: '';
+                     display: block;
+                     clear: both;}
+.specifiche {width:100%;
+             display: flex;}
+.icone {flex-grow: 1;
+        flex-basis: 50%;
+        text-align: center;
+        transition: all .5s;}
+.icone:hover {
+    transform: scale(1.2);
+}
+.icone h1 {max-width: 60%;
+           margin: 0 auto;
+           padding-bottom: 100px;}
+.icone img {padding-top: 100px;
+            width:25%;}
+.internet-multimedia {width:100%;
+                      display: flex;}
+.multimedia {flex-grow: 1;
+             flex-basis: 50%;
+             z-index: 2000;}
+.multimedia img {width: 100%;
+                 display: block;}
+.grey {background-color:#f2f2f2;
+       position: relative;}
+.textwrapper {position: absolute;
+               top:50%;
+               transform: translate(0%, -50%);
+               z-index: 1;}
+.multimedia h1 {text-align: left;
+                padding-left: 50px;}
+h2 {font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #282b30;}
+.multimedia h2 {padding-left: 50px;
+                margin:0;}
+.scopri h2 {font-size: 22px;}
+.multimedia p {text-align: left;
+               padding-left: 50px;
+               padding-right: 50px;
+               max-width: 80%;}
+.multimedia p span {font-weight: 700;}
+.multimedia a {font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               text-decoration: none;
+               font-weight: 600;
+               color: #9b0014;
+               padding-left: 50px;
+               padding-top: 30px;
+               cursor: pointer;}
+.multimedia a:hover {text-decoration: underline;}
+.scopri {text-align: center;}
+.scopri h1 {padding-top: 100px;}
+.scopri p {padding-bottom: 20px;}
+.scopri button {background-color: #9b0014;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                color:white;
+                letter-spacing: 1px;
+                border-radius: 8px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-bottom: 100px;
+                border:2px solid #9b0014;
+                cursor: pointer;
+transition: all .5s;}
+.scopri button:hover {transform: scale(1.05);
+                     -webkit-transition: all 150ms ease;
+                     -moz-transition: all 150ms ease;
+                     -ms-transition: all 150ms ease;
+                     -o-transition: all 150ms ease;
+                     transition: all 150ms ease;}
+.contatti {background-color: #484f59;
+           text-align: center;}
+.contatti img {padding-top: 60px;
+transition: all .3s;}
+.contatti img:hover {transform: scale(1.1);}
+.contatti h1 {color:white;
+              font-weight: 500;}
+.contatti a:last-child {text-decoration: none;
+             font-family: 'Montserrat', sans-serif;
+             font-weight: 300;
+             color:white;
+             font-size: 18px;
+             cursor: pointer;
+             display: block;
+             padding-bottom: 60px;}
+.contatti a:last-child:hover { text-decoration: underline;}
+.footer {height:100px;
+         background-color: #282b30;
+         position: relative;}
+
+.footer a {position: absolute;
+           top:50%;
+           transform: translate(0%, -50%);
+           right:50px;
+           cursor: pointer;}
+.footer a:first-child{right:250px;}
+.slideinleft {
+	margin-left:-150px;
+    opacity: 0;
+    z-index: 1;
+}
+
+@media screen and (min-width:1024px) and (max-width:1340px) 
+{
+  h1 {font-size: 24px;}
+  p {font-size: 16px;}
+  .intestazione img {width: 35%;}
+  .opening-buttons button {font-size: 18px;
+                           padding-left: 20px;
+                           padding-right: 20px;}
+  .icone h1 {max-width: 80%;}
+  .icone img {width:35%;}
+  .multimedia h2 {font-size: 22px;}
+  .multimedia a {font-size: 14px;}
+  .multimedia p {font-size: 14px;
+                 line-height: 16px;}
+  .scopri h2 {font-size: 18px;}
+  .scopri button {font-size: 18px;
+                  padding-left: 20px;
+                  padding-right: 20px;}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) 
+{ 
+   h1 {font-size: 22px;}
+   p {font-size: 16px;
+     line-height: 16px;}
+  .header img {content: url('../images/header-mobile.jpg');}
+  .multimedia h2 {font-size: 22px;}
+  .multimedia img {content: url('../images/internetemultimedia-tablet.jpg');}
+  .intestazione img {width:40%;}
+  .opening-buttons button {font-size: 18px;
+                           padding-left: 20px;
+                           padding-right: 20px;}
+  .slideinleft {opacity: 1;
+                margin: 0;}
+  .icone img{width:45%;}
+  .icone h1 {max-width: none;}
+  .internet-multimedia {display: block;}
+  .textwrapper {position: relative;
+                transform: none;}
+  .textwrapper h1 {margin:0;
+                     padding-top: 60px;}
+  .textwrapper a {display: block;
+                  padding-bottom: 60px;}
+  .scopri h2 {font-size: 18px;}
+  .scopri button {font-size: 18px;
+                  padding-left: 20px;
+                  padding-right: 20px;}
+  .footer {height: 80px;}
+  .footer a img {width:120px;}
+  .footer a:first-child {right:220px;}
+}
+
+@media screen and (max-width:767px) 
+{ 
+  h1 {font-size: 18px;}
+  p {font-size: 14px;}
+  .header img {content: url('../images/header-mobile.jpg');}
+  .intestazione img {width:60%;
+                     padding-left: 20px;
+                     padding-top: 10px;
+                     padding-bottom: 10px;}
+  .slideinleft {opacity: 1;
+                margin: 0;}
+  .introduzione h1 {padding-top: 30px;
+                      padding-bottom: 15px;}
+  .introduzione p {width:80%;
+                   padding-bottom: 15px;}
+  .introduzione .opening-buttons {width:100%;
+                                  margin-bottom: 0%;}
+  .right {float:none;
+            padding-bottom: 0;}
+  .left {float:none;
+           padding-bottom: 0;}
+  .opening-buttons button {font-size: 14px;
+                           border-radius: 4px;
+                           margin-bottom: 0%;
+                           padding-left: 20px;
+                           padding-right: 20px;
+                           margin-right: 0;}
+  .opening-buttons:last-child {padding-bottom: 30px;}
+  .grey-button {margin-top: 15px;
+                margin-left: 0%;}
+  .specifiche {display: block;}
+  .icone img {width:30%;
+              padding-top: 15px;}
+  .icone h1 {padding-bottom: 30px;}
+  .internet-multimedia {display: block;}
+  .textwrapper {position: relative;
+                   transform: none;}
+  .textwrapper h1 {margin:0;
+                   padding-top: 30px;
+                   padding-left: 20px;}
+  .textwrapper a {display: block;
+                  padding-bottom: 30px;}
+  .multimedia h2 {font-size: 18px;
+                  padding-left: 20px;}
+  .multimedia a {font-size: 14px;
+                   padding-top: 15px;
+                   padding-bottom: 30px;
+                   padding-left: 20px;}
+   .multimedia p {padding-left: 20px;
+                  max-width: 90%;
+                  margin: 0 auto;}
+   .scopri h1 {padding-top: 50px;}
+   .scopri button {margin-bottom: 50px;
+                   font-size: 14px;
+                   border-radius: 4px;
+                   padding-left: 20px;
+                   padding-right: 20px;}
+   .scopri h2 {font-size: 16px;
+               max-width: 90%;
+               margin-left: auto;
+               margin-right: auto;}
+   .contatti img {padding-top: 30px;
+                   width:12%;}
+   .contatti a:last-child {font-size: 14px;
+                            padding-bottom: 30px;}
+   .footer {height:60px;}
+   .footer a {right:10px;}
+   .footer a:first-child{right:120px;}
+   .footer a img {width:95px;}
+}
